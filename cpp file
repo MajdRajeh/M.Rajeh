@@ -2,36 +2,36 @@
 #include "Header.h"
 using namespace std;
 
-Animal::Animal(int A, int N) {
-	cout << endl << "Animal Created";
-	Age = A;
-	name = N;
+Animal::Animal(int a, int n) {
+	cout << "\nAnimal Created";
+	Age = a;
+	name = n;
 }
 
 Animal::~Animal() {
-	cout << endl << "Animal Destroyed";
+	cout << "\nAnimal Destroyed";
 }
 
-Dog::Dog(int A, int N, int B) : Animal(A, N) {
+Dog::Dog(int a, int n, int Br) : Animal(a, n) {
 	cout << endl << "Dog Created";
-	Breed = B;
+	Breed = Br;
 }
 Dog::~Dog() {
-	cout << endl << "Dog Destroyed";
+	cout << "\nDog Destroyed";
 }
-Cat::Cat(int a, int n, int c, int PawS) : Animal(a, n) {
-	cout << endl << "Cat Created";
+Cat::Cat(int a, int n, int c, int PS) : Animal(a, n) {
+	cout <<"\nCat Created";
 	color = c;
-	pawSize = PawS;
+	pawSize = PS;
 }
 
 Cat::~Cat() {
-	cout << endl << "Cat Destroyed";
+	cout << "\nCat Destroyed";
 }
-Fish::Fish(int A, int N, int SS, int GillC) :Animal(A, N) {
-	cout << endl << "Dog Created";
-	SwimSpeed = SS;
-	GillCapacity = GillC;
+Fish::Fish(int a, int n, int SwimS, int GCapacity) :Animal(a, n) {
+	cout << "\nFish Created";
+	SwimSpeed = SwimS;
+	GillCapacity = GCapacity;
 }
 Fish::~Fish() {
 	cout << endl << "Fish Destroyed";
@@ -44,9 +44,9 @@ void printAnimal(Animal* a) {
 int main() {
 	Animal* arrayAnimal[3];
 
-	Dog d = Dog(2, 1, 4);
-	Cat c = Cat(5, 1, 2, 13);
-	Fish f = Fish(3, 2, 5, 9);
+	Dog d = Dog(4, 5, 3);
+	Cat c = Cat(2, 1, 1, 9);
+	Fish f = Fish(5, 2, 7, 11);
 
 	arrayAnimal[0] = &d;
 	arrayAnimal[1] = &c;
