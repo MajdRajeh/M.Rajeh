@@ -13,7 +13,7 @@ public:
 	~Animal();
 
 	virtual void print() {
-		cout << endl << "Animal Print";
+		cout << "\nAnimal Print";
 	}
 
 	virtual void getOwner() = 0;
@@ -27,7 +27,8 @@ public:
 	~Dog();
 
 	void print() {
-		cout << endl << "Dog Print";
+		cout << endl;
+		cout << "Dog Print";
 		Animal::print();
 	}
 	virtual void getOwner() {
@@ -37,19 +38,21 @@ public:
 
 class Cat : public Animal {
 private:
-	int color;
-	int pawSize;
+	int Color;
+	int PawSize;
 
 public:
 	Cat(int, int, int, int);
 	~Cat();
 
 	void print() {
-		cout << endl << "Cat Print";
+		cout << endl;
+		cout << "Cat Print";
 		Animal::print();
 	}
 	virtual void getOwner() {
-		cout << endl << "Owner: Cat";
+		cout << endl;
+		cout << "Owner: Cat";
 	}
 };
 
@@ -62,7 +65,8 @@ public:
 	~Fish();
 
 	virtual void getOwner() {
-		cout << endl << "Owner: Fish";
+		cout << endl;
+		cout << "Owner: Fish";
 	}
 };
 #endif
