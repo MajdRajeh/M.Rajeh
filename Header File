@@ -31,7 +31,7 @@ public:
 		Animal::print();
 	}
 	virtual void getOwner() {
-		cout << endl << "Owner: Dog.";
+		cout << endl << "Owner: Dog";
 	}
 };
 
@@ -49,7 +49,7 @@ public:
 		Animal::print();
 	}
 	virtual void getOwner() {
-		cout << endl << "Owner: Cat.";
+		cout << endl << "Owner: Cat";
 	}
 };
 
@@ -62,7 +62,7 @@ public:
 	~Fish();
 
 	virtual void getOwner() {
-		cout << endl << "Owner: Fish.";
+		cout << endl << "Owner: Fish";
 	}
 };
 #endif
